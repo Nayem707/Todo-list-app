@@ -1,10 +1,10 @@
-import React from 'react';
+import SearchInput from '../common/SearchInput';
 
 const NavStyle = () => {
   return (
-    <header className='bg-green-800 h-[200px]'>
-      <div className='text-center py-10 space-y-2'>
-        <input type='text' />
+    <header className='bg-green-800 flex justify-center items-center'>
+      <div className=' text-center py-5 space-y-2'>
+        <SearchInput />
         <h1 className=' text-white text-3xl'>Task Manager</h1>
 
         <div className=' text-center'>
