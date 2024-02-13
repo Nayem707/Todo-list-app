@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { EditIcon } from '../../assets/Icon';
-import Card from './ToDoCard';
 
 function Modal() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,10 +13,12 @@ function Modal() {
 
   return (
     <div className='bg-gray-200 flex justify-center items-center h-screen'>
-      {/* <button className='' onClick={openModal}>
-        <EditIcon />
-      </button> */}
-      <Card openModal={openModal} />
+      <button
+        onClick={openModal}
+        className=' px-8 py-2 rounded-sm font-medium text-white bg-green-400'
+      >
+        + Create
+      </button>
 
       {isOpen && (
         <div className='fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-50 flex justify-center items-center'>
