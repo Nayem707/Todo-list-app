@@ -1,6 +1,7 @@
 import Card from '../../components/common/ToDoCard';
 import InprogressCad from '../../components/common/InprogressCad';
 import SideCard from '../../components/common/SideCard';
+import Modal from '../../components/common/Modal';
 
 const Home = () => {
   return (
